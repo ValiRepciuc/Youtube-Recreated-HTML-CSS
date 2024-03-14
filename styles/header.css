@@ -1,0 +1,174 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(227, 222, 222);
+    background-color: white;
+    padding-bottom: 2px;
+
+}
+
+.left-side{
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu-img{
+    height: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.youtube-logo-img{
+    height: 20px;
+}
+
+.middle-side{
+    flex: 1;
+    margin-left: 30px;
+    margin-right: 70px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.searchbar{
+    flex: 1;
+    padding-left: 10px;
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    height: 36px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+
+.searchbar::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+.search-button{
+    height: 40px;
+    width: 60px;
+    margin-left: -1px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(192, 192, 192);
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    background-color: rgb(241, 241, 241);
+    margin-right: 15px;
+}
+
+.search-button,
+.voice-search-button,
+.upload-content-container,
+.yt-apps-container,
+.notifications-container{
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-button .test,
+.voice-search-button .test,
+.upload-content-container .test,
+.yt-apps-container .test,
+.notifications-container .test{
+    position: absolute;
+    background-color: gray;
+    padding: 4px 8px 4px 8px;
+    color: white;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .test,
+.voice-search-button:hover .test,
+.upload-content-container:hover .test,
+.yt-apps-container:hover .test,
+.notifications-container:hover .test{
+    opacity: 1;
+}
+
+.search-img{
+    height: 25px;
+}
+
+.voice-search-button{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(246, 246, 246);
+}
+
+.voice-search-img{
+    height: 25px;
+}
+
+.right-side{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.upload-img{
+    width: 25px;
+}
+.yt-apps-img{
+    width: 25px;
+}
+
+.notifications-container{
+    position: relative;
+}
+
+.notifications-count{
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-right:5px;
+    background-color: rgb(199, 0, 0);
+    border-radius: 10px;
+    font-size: 11px;
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+
+}
+.notifications-img{
+    width: 25px;
+}
+
+.my-channel-pic{
+    width: 32px;
+    height: 32px;
+    margin-right: 22px;
+}
+
